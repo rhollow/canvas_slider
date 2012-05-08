@@ -1,0 +1,42 @@
+input[type='range'] {  
+    -webkit-appearance: none;  
+	width:127px;
+}
+  
+input[type='range']::-webkit-slider-thumb {  
+    -webkit-appearance: none;  
+	background-image: url('../gfx/slider.jpg');
+    width: 17px;  
+    height: 24px;  
+	border: none;
+}
+
+#background_canvas {
+	z-index: 1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#static_canvas {
+	z-index: 2;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#display_canvas {
+	z-index: 3;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#slider_block {
+	z-index: 4;
+	display: block;
+	position: absolute;
+	top: 183px;
+	left: 25px; 
+}
+

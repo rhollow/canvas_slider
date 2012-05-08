@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0;"/>
+		<link rel="stylesheet" type="text/css" href="css/chainrule.css" />
+		<script type="text/javascript" src="js/chainrule.js"></script>
+		<title>Chain rule slider test</title>
+	</head>
+
+	<body onload="init()">
+    
+		<div id="slider_block">
+			<input id="slider" type="range" min="-30" max="30" value="10" onchange="displayValue(this.value)"></input>
+		</div>
+		
+		<section>
+			<canvas id="background_canvas" height="358px" width="563">
+				This browser doesn't support HTML5's Canvas.
+			</canvas>
+			
+			<canvas id="static_canvas" height="358px" width="563">
+				This browser doesn't support HTML5's Canvas.
+			</canvas>
+
+			<canvas id="display_canvas" height="358px" width="563">
+				This browser doesn't support HTML5's Canvas.
+			</canvas>
+
+		</section>
+
+	</body>
+
+</html>
