@@ -64,9 +64,9 @@ var blueCurveYStart;
 
 var stageFill_color = "#EEE";
 var stageStroke_color = "#999";
-//var blueCurve_color = "#39C";
+var blueCurve_color = "#39C";
 //var blueCurve_color = "#C00";
-var blueCurve_color = "#093";
+//var blueCurve_color = "#093";
 var blueText_color = "#0078A8";
 var black_color = "#000";
 var white_color = "#FFF";
@@ -231,7 +231,7 @@ function init() {
 	static_c.stroke();
 
 	for (var i = -3; i <= 3; i++) {
-		if (i == 0) {
+		if (i === 0) {
 			static_c.strokeStyle = black_color;
 		} else {
 			static_c.strokeStyle = gridGray_color;		
@@ -263,7 +263,7 @@ function init() {
 	lowerLimit = 0;
 	upperLimit = gridYRange;
 	for (var i = lowerLimit; i <= upperLimit; i++) {
-		if ((i == lowerLimit) || (i == 3) || (i == upperLimit)) {
+		if ((i === lowerLimit) || (i === 3) || (i === upperLimit)) {
 			static_c.strokeStyle = black_color;
 		} else {
 			static_c.strokeStyle = gridGray_color;
@@ -358,7 +358,7 @@ function init() {
 	static_c.beginPath();  
 
 	for (var i = lowerLimit; i <= upperLimit; i++) {  
-		if (i == lowerLimit) {
+		if (i === lowerLimit) {
 			static_c.moveTo(0, 60 + (-1 * interval * Math.sin(-5.5)));
 		} else {
 			nextX = i - lowerLimit;
@@ -393,7 +393,7 @@ function init() {
 	upperLimit = 5.5 * interval;
 	display_c.beginPath();
 	for (var i = lowerLimit; i <= upperLimit; i++) {  
-		if (i == lowerLimit) {
+		if (i === lowerLimit) {
 			display_c.moveTo(blueCurveXStart, blueCurveYStart + (-1 * interval * Math.sin(-5.5)));
 		} else {
 			nextX = i - lowerLimit + blueCurveXStart;
@@ -428,7 +428,7 @@ function displayValue(newValue) {
 	upperLimit = 5.5 * interval;
 	display_c.beginPath();
 	for (var i = lowerLimit; i <= upperLimit; i++) {  
-		if (i == lowerLimit) {
+		if (i === lowerLimit) {
 			display_c.moveTo(blueCurveXStart, blueCurveYStart + (-1 * interval * Math.sin(-5.5 * num)));
 		} else {
 			nextX = i - lowerLimit + blueCurveXStart;
