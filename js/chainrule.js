@@ -66,7 +66,6 @@ var stageFill_color = "#EEE";
 var stageStroke_color = "#999";
 var blueCurve_color = "#39C";
 //var blueCurve_color = "#C00";
-//var blueCurve_color = "#093";
 var blueText_color = "#0078A8";
 var black_color = "#000";
 var white_color = "#FFF";
